@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz CR7 - O Rei do Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tela de Início -->
+        <div id="tela-inicio" class="card">
+            <span class="badge">CR7 Trivia</span>
+            <h1>Quiz Cristiano Ronaldo</h1>
+            <p>Teste seus conhecimentos sobre o maior artilheiro da história do futebol mundial!</p>
+            <button id="btn-iniciar" class="btn btn-principal">Iniciar Quiz 🚀</button>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div id="tela-quiz" class="card escondido">
+            <div class="cabecalho-quiz">
+                <span id="contador-perguntas">Pergunta 1 de 10</span>
+                <span id="contador-pontos">Pontos: 0</span>
+            </div>
+            
+            <div class="barra-progresso">
+                <div id="progresso-preenchimento"></div>
+            </div>
+
+            <h2 id="enunciado">Carregando pergunta...</h2>
+
+            <div id="caixa-alternativas" class="caixa-alternativas"></div>
+
+            <button id="btn-reiniciar" class="btn btn-secundario">🔄 Reiniciar</button>
+        </div>
+
+        <!-- Tela de Resultado -->
+        <div id="tela-resultado" class="card escondido">
+            <h2>Resultado Final</h2>
+            <div class="desempenho">
+                <span id="icone-resultado" class="icone-resultado">🏆</span>
+                <p id="classificacao-resultado" class="classificacao">Lenda do Futebol!</p>
+                <div id="texto-pontuacao" class="texto-pontuacao">Você acertou 0 de 0 perguntas</div>
+            </div>
+            <p id="mensagem-resultado" class="mensagem"></p>
+            <button id="btn-jogar-novamente" class="btn btn-principal">🎮 Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
